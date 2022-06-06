@@ -5,14 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Videojuegos 🎮</title>
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
-<body style="background-image:url('images/fondo.jpg'); font-size:28px; font-family:'Verdana';">
+<body>
   <!-- Encabezado -->
-  <header style="background-color:rgba(255, 255, 255, 0.7); border-radius:6px; display: flex; justify-content:space-between; align-items:center; margin-bottom:50px;">
+  <header class="bloque-fondo">
     <!-- Logo y título -->
-    <div style="display: flex; align-items:center;">
-      <img src="images/logo.png" alt="Logo de mi página" height="125" style="border-radius: 50%;">
-      <h1 style="color:mediumvioletred;">Videojuegos</h1>
+    <div class="alineado-centrado">
+      <img id="logo" src="images/logo.png" alt="Logo de mi página">
+      <h1 id="titulo">Videojuegos</h1>
     </div>
     <!-- Redes sociales -->
     <div>
@@ -23,11 +24,12 @@
     </div>
   </header>
   <!-- Contenido principal -->
-  <div style="display: flex;">
+  <div id="contenido-principal">
     <!-- Lista de videojuegos -->
-    <div style="background-color:rgba(255, 255, 255, 0.7); border-radius:12px; margin-right:50px;">
+    <div id="juegos-lista" class="bloque-fondo">
+      <h3>Lista de videojuegos</h3>
       <ul>
-        <li>Minecraft</li>
+        <li><a href="">Minecraft</a></li>
         <li>Pou</li>
         <li>Free Fire</li>
         <li>Terraria</li>
@@ -46,7 +48,7 @@
       </ul>
     </div>
     <!-- Videojuego seleccionado -->
-    <div style="background-color:rgba(255, 255, 255, 0.7); border-radius:12px; text-align:center;">
+    <div id="juego-seleccionado" class="bloque-fondo">
       <img src="images/minecraft.png" alt="Caja del juego" height="400">
       <br>
       <h2>Minecraft</h2>
