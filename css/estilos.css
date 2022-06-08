@@ -26,6 +26,10 @@ header {
 #titulo {
   color: mediumvioletred;
   font-family: 'Oswald', sans-serif;
+  text-shadow: 2px 2px black;
+  font-size: 72px;
+  margin: 0;
+  letter-spacing: 10px;
 }
 
 #juego-seleccionado {
@@ -34,6 +38,33 @@ header {
 
 #juegos-lista {
   min-width: 275px;
+  text-align: center;
+}
+
+#juegos-lista button {
+  background-color:rgb(26, 101, 194);
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+  width: 95%;
+  font-family: 'Noto Sans';
+  font-size: 18px;
+  padding: 5px;
+  border-style: none;
+  border-bottom-style: solid;
+  border-width: 4px;
+  border-color: rgb(20, 72, 136);
+  border-radius: 8px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#juegos-lista button:hover,
+#juegos-lista button.seleccionado {
+  background-color: rgb(22, 159, 66);
+  border-color: rgb(23, 108, 50);
+  width: 100%;
+  transition: 0.5s;
 }
 
 #contenido-principal {
@@ -51,4 +82,9 @@ header {
 .alineado-centrado {
   display: flex;
   align-items: center;
+}
+
+#encabezado {
+  padding-left: 3%;
+  padding-right: 3%;
 }
