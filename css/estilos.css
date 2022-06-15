@@ -16,11 +16,21 @@ header {
   align-items: center;
 }
 
+header a {
+  text-decoration: none;
+}
+
 #logo {
   width: 100px;
   height: 100px;
   margin-right: 20px;
   border-radius: 50%;
+  transition: 1s;
+}
+
+#logo:hover {
+  transform: rotate(360deg);
+  transition: 1s;
 }
 
 #titulo {
@@ -29,7 +39,12 @@ header {
   text-shadow: 2px 2px black;
   font-size: 72px;
   margin: 0;
+  transition: 0.5s;
+}
+
+#titulo:hover {
   letter-spacing: 10px;
+  transition: 0.5s;
 }
 
 #juego-seleccionado {
@@ -87,4 +102,59 @@ header {
 #encabezado {
   padding-left: 3%;
   padding-right: 3%;
+}
+
+.caja {
+  text-align: center;
+  border-style: solid;
+  border-radius: 16px;
+  border-color: #011936;
+  background-color: #011936;
+  margin: 24px;
+  transition: 0.5s;
+}
+
+.caja:hover {
+  border-color: #17C3B2;
+  background-color: #17C3B2;
+  transition: 0.5s;
+}
+
+.caja h2 {
+  color: white;
+  margin: 5px;
+  transition: 0.5s;
+  text-decoration: line-through;
+}
+
+.caja:hover h2 {
+  text-decoration: none;
+}
+
+.caja img {
+  filter: blur(2.5px) grayscale(60%);
+  height: 300px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.caja:hover img {
+  filter: blur(0px) grayscale(0%);
+  transition: 0.5s;
+}
+
+#ligas a {
+  border-radius: 8px;
+  background-color: #FE6D73;
+  color: white;
+  padding: 10px;
+  border-bottom-style: solid;
+  border-color: #b34347;
+  transition: 0.5s;
+}
+
+#ligas a:hover {
+  background-color: #fc9fa2;
+  border-color: #FE6D73;
+  transition: 0.5s;
 }
