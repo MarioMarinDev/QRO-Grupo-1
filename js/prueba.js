@@ -26,3 +26,22 @@ function cambiar_freefire() {
   desc_juego.innerHTML = "Garena Free Fire es un juego de acción y aventura de tipo battle royale que se juega en tercera persona. El juego consiste en que hasta 50 jugadores caen desde un paracaídas en una isla en busca de armas y equipo para matar a los demás jugadores. Los jugadores son libres de elegir su posición de partida, coger armas y suministros para alargar su vida en la batalla.";
 }
 
+
+/*
+  arreglo.length        Cantidad de elementos
+  arreglo.push()        Agregar al final del arreglo
+  arreglo.unshift()     Agregar al inicio del arreglo
+  arreglo.pop()         Eliminar el último elemento del arreglo
+  arreglo.shift()       Eliminar el primer elementos del arreglo
+*/
+
+let juegos = ["Minecraft", "Pou", "Free Fire", "Terraria", "Call of Duty", "Far Cry", "God of War", "Swordmaster Story", "Halo", "Gran Theft Auto", "Roblox", "Five Nights at Freddy's", "Pokémon", "Sonic", "Metal Slug", "Mario Bros"];
+juegos[4] = "Battlefield";
+juegos.unshift("Doom");
+juegos.push("Fall guys");
+
+let contenedor = document.getElementById("juegos-lista");
+
+for(let i = 0; i < juegos.length; i++) {
+  contenedor.innerHTML += "<button>" + juegos[i] + "</button>";
+}
