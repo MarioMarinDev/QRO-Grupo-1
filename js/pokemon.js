@@ -36,6 +36,8 @@ const el_siguiente = document.querySelector("#nav button:last-child");
 // Agregar eventos a botónes de navegación
 el_siguiente.addEventListener("click", function() {
   if(pokemon_actual + 1 > pokemon_max) {
+    pokemon_actual = 1;
+    buscar_pokemon();
     return;
   }
   pokemon_actual += 1;
@@ -44,6 +46,8 @@ el_siguiente.addEventListener("click", function() {
 
 el_anterior.addEventListener("click", function() {
   if(pokemon_actual - 1 <= 0) {
+    pokemon_actual = pokemon_max;
+    buscar_pokemon();
     return;
   }
   pokemon_actual -= 1;
