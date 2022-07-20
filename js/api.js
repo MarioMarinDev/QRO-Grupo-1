@@ -1,6 +1,7 @@
 
 // Variables principales
 const url = "https://raw.githubusercontent.com/MarioMarinDev/QRO-Grupo-1-API/master/";
+let boton_activo = null;
 
 // Encontrar elementos de HTML
 const el_lista_juegos = document.getElementById("juegos-lista");
@@ -28,6 +29,14 @@ fetch(url + "datos.json").then(function(respuesta) {
       el_nombre.innerHTML = datos[i].nombre;
       // Cambiar descripción 
       el_desc.innerHTML = datos[i].descripcion;
+      // Checar si el botón activo existe y quitarle la clase "seleccionado"
+      if(boton_activo != null) {
+        boton_activo.classList.remove("seleccionado");
+      }
+      // Agregar clase de seleccionado
+      boton.classList.add("seleccionado");
+      // Dejar como botón activo el botón seleccionado
+      boton_activo = boton;
     });
     // Darle clic siempre al primer elemento
     if(i == 0) {
